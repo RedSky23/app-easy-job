@@ -5,4 +5,5 @@ export class EmployeerModel{
   phone_employer: number = 0;
   email_employer: number = 0;
   titleModel: string = "";    
+  
 }
