@@ -7,6 +7,9 @@ import { Router } from '@angular/router'
   styleUrls: ['./page-principal.component.css']
 })
 export class PagePrincipalComponent {
+onRegisterWorker() {
+  this.router.navigate(['/worker'])
+}
   
   constructor (
     private router: Router

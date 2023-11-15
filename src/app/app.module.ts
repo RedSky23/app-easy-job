@@ -25,9 +25,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
-import { WorkerComponent } from './component/worker/worker.component';
-import { ListarComponent } from './component/worker/listar/listar.component';
-import { WorkerCreateEditComponent } from './component/worker/worker-create-edit/worker-create-edit.component';
+import { WorkerComponent } from './worker/worker.component';
+import { ListarComponent } from './worker/listar/listar.component';
+
+
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { DialogoComponent } from './worker/listar/dialogo/dialogo.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { WorkerCreateEditComponent } from './worker/worker-create-edit/worker-create-edit.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+
 
 
 @NgModule({
@@ -38,6 +46,7 @@ import { WorkerCreateEditComponent } from './component/worker/worker-create-edit
     CreateEditComponent,
     WorkerComponent,
     ListarComponent,
+    DialogoComponent,
     WorkerCreateEditComponent
   ],
   imports: [
@@ -52,7 +61,11 @@ import { WorkerCreateEditComponent } from './component/worker/worker-create-edit
     MatFormFieldModule,
     ReactiveFormsModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatDialogModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
