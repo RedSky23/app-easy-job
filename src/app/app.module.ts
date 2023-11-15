@@ -25,6 +25,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
+import { WorkerComponent } from './component/worker/worker.component';
+import { ListarComponent } from './component/worker/listar/listar.component';
+import { WorkerCreateEditComponent } from './component/worker/worker-create-edit/worker-create-edit.component';
 
 
 @NgModule({
@@ -32,7 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     NavbarComponent,
     PagePrincipalComponent,
-    CreateEditComponent
+    CreateEditComponent,
+    WorkerComponent,
+    ListarComponent,
+    WorkerCreateEditComponent
   ],
   imports: [
     BrowserModule,
