@@ -28,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { WorkerComponent } from './component/worker/worker.component';
 import { ListarComponent } from './component/worker/listar/listar.component';
 import { WorkerCreateEditComponent } from './component/worker/worker-create-edit/worker-create-edit.component';
+import { CreateServiceContractComponent } from './employeer/create-service-contract/create-service-contract.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { WorkerCreateEditComponent } from './component/worker/worker-create-edit
     CreateEditComponent,
     WorkerComponent,
     ListarComponent,
-    WorkerCreateEditComponent
+    WorkerCreateEditComponent,
+    CreateServiceContractComponent
   ],
   imports: [
     BrowserModule,
