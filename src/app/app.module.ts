@@ -25,10 +25,30 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 
 import { HttpClientModule } from '@angular/common/http';
-import { WorkerComponent } from './component/worker/worker.component';
-import { ListarComponent } from './component/worker/listar/listar.component';
-import { WorkerCreateEditComponent } from './component/worker/worker-create-edit/worker-create-edit.component';
+import { WorkerComponent } from './worker/worker.component';
+import { ListarComponent } from './worker/listar/listar.component';
+
+
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
+import { DialogoComponent } from './worker/listar/dialogo/dialogo.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { WorkerCreateEditComponent } from './worker/worker-create-edit/worker-create-edit.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 import { CreateServiceContractComponent } from './employeer/create-service-contract/create-service-contract.component';
+import { ListServiceContractComponent } from './employeer/list-service-contract/list-service-contract.component';
+import { ListServiceContractsPerDateComponent } from './employeer/list-service-contracts-per-date/list-service-contracts-per-date.component';
+import { RegisterContractComponent } from './worker/register-contract/register-contract.component';
+import { ListarContractMontoComponent } from './worker/listar-contract-monto/listar-contract-monto.component';
+import { OccupationComponent } from './occupation/occupation.component';
+import { OccupationListComponent } from './occupation/occupation-list/occupation-list.component';
+
+import {MatSelectModule} from '@angular/material/select';
+import { EmployeerComponent } from './employeer/employeer.component';
+import { EmployeerListComponent } from './employeer/employeer-list/employeer-list.component';
+import { EmployeerDialogComponent } from './employeer/employeer-dialog/employeer-dialog.component';
+
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -39,8 +59,18 @@ import { CreateServiceContractComponent } from './employeer/create-service-contr
     CreateEditComponent,
     WorkerComponent,
     ListarComponent,
+    DialogoComponent,
     WorkerCreateEditComponent,
-    CreateServiceContractComponent
+    CreateServiceContractComponent,
+    ListServiceContractComponent,
+    ListServiceContractsPerDateComponent,
+    RegisterContractComponent,
+    ListarContractMontoComponent,
+    OccupationComponent,
+    OccupationListComponent,
+    EmployeerComponent,
+    EmployeerListComponent,
+    EmployeerDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +88,9 @@ import { CreateServiceContractComponent } from './employeer/create-service-contr
     MatPaginatorModule,
     MatTableModule,
     MatDialogModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatSelectModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
